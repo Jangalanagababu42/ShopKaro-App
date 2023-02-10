@@ -8,6 +8,8 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
+import { Provider } from "react-redux";
+import { store } from "./store.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +22,10 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return;
+  <Provider store={store}>
+    <RouterProvider router={router} />;
+  </Provider>;
 }
 
 export default App;

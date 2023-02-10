@@ -8,10 +8,10 @@ import React from "react";
 
 export default function Header() {
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Toolbar>
         <Typography variant="h6" color="inherit" sx={{ flexGrow: 1 }}>
-          Shop Karo
+          Shopkaro
         </Typography>
         <Box
           sx={{
